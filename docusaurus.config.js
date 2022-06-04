@@ -35,6 +35,7 @@ const config = {
           // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/AlmostEfficient/search-buildspace',
+          routeBasePath: '/',
         },
         blog: {
           showReadingTime: true,
