@@ -7,17 +7,14 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Search buildspace',
-  tagline: 'Quickly and easily search buildspace guides',
-  url: 'https://search-buildspace.vercel.app/',
+  tagline: 'Quickly and easily search all buildspace guides',
+  url: 'https://learnsolidity.lol/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
-
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'almostefficient', // Usually your GitHub org/user name.
-  projectName: 'search-buildspace', // Usually your repo name.
+  favicon: 'img/favicon2.png',
+  organizationName: 'almostefficient',
+  projectName: 'search-buildspace', 
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
@@ -57,19 +54,20 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'My Site',
+        title: 'search',
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          alt: 'Buildspace Logo',
+          src: 'img/buildspace-light.svg',
+          srcDark: 'img/buildspace.svg',
         },
         items: [
-          {
-            type: 'doc',
-            docId: 'intro',
-            position: 'left',
-            label: 'Tutorial',
-          },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          // {
+          //   type: 'doc',
+          //   docId: 'intro',
+          //   position: 'left',
+          //   label: 'Tutorial',
+          // },
+          // {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/almostefficient/search-buildspace',
             label: 'GitHub',
@@ -81,21 +79,29 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Buildspace links',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'Buildspace projects',
+                to: 'https://buildspace.so/p?utm_source=raza&utm_medium=footer&utm_campaign=search-buildspace',
+              },
+              {
+                label: 'Buildspace jobs',
+                to: 'https://buildspace.so/jobs?utm_source=raza&utm_medium=footer&utm_campaign=search-buildspace',
+              },
+              {
+                label: 'Buildspace discover',
+                to: 'https://buildspace.so/discover?utm_source=raza&utm_medium=footer&utm_campaign=search-buildspace',
               },
             ],
           },
           {
             title: 'Community',
             items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/ethereum',
-              },
+              // {
+              //   label: 'Stack Overflow',
+              //   href: 'https://stackoverflow.com/questions/tagged/ethereum',
+              // },
               {
                 label: 'Discord',
                 href: 'https://discordapp.com/invite/buildspace',
@@ -109,10 +115,10 @@ const config = {
           {
             title: 'More',
             items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
+              // {
+              //   label: 'Blog',
+              //   to: '/blog',
+              // },
               {
                 label: 'GitHub',
                 href: 'https://github.com/buildspace/buildspace-projects',
